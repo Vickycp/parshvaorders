@@ -4,7 +4,9 @@ const Event = require('./src/docketSchema');
 const cors = require('cors');// Assuming the schema is defined in a separate file
 const bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://localhost:27017/docket', {
+// vickynode
+// a6mZLvz3j6uLtLq5
+mongoose.connect('mongodb+srv://vickynode:Z8GpKxvckNwVJDIp@nodep1.3cgtoyi.mongodb.net/docket', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
