@@ -23,7 +23,7 @@ Docket Management System is a web application that allows users to manage events
 - **Dependency Management:** npm (Node Package Manager)
 
 ## Installation
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/Vickycp/parshvaorders.git`
 2. Install dependencies: `npm install`
 3. Start the server: `npm start`
 
