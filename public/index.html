@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docket Creation</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Docket Form</h2>
+        <form id="docketForm">
+            <label class="form-label" for="name">Name:</label><br>
+            <input class="form-input" type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label class="form-label" for="startTime">Start Time:</label><br>
+            <input class="form-input" type="datetime-local" id="startTime" required><br>
+
+            <label class="form-label" for="endTime">End Time:</label><br>
+            <input class="form-input" type="datetime-local" id="endTime" required><br>
+
+            <label class="form-label" for="hoursWorked">No. of Hours Worked:</label><br>
+            <input class="form-input" type="number" id="hoursWorked" required><br>
+
+            <label class="form-label" for="ratePerHour">Rate per Hour:</label><br>
+            <input class="form-input" type="number" id="ratePerHour" required><br>
+
+            <label class="form-label" for="supplier">Supplier Name:</label><br>
+            <select class="form-input" id="supplier" required>
+                <option value="">Select Supplier</option>
+         
+            </select><br>
+
+            <label class="form-label" for="purchaseOrder">Purchase Order:</label><br>
+            <select class="form-input" id="purchaseOrder" required>
+                <option value="">Select Purchase Order</option>
+            
+            </select><br>
+            <label class="form-label" for="descriptionDisplay">description:</label><br>
+            <div id="descriptionDisplay"></div>
+
+
+            <button class="form-input" type="submit">Create Docket</button>
+        </form>
+    </div>
+
+    <div class="docket-container">
+        <h2>Created Dockets:</h2>
+        <div id="docketList"></div>
+    </div>
+    <script src="./app.js"></script>
+  
+
+    </body>
+</html>
