@@ -87,7 +87,7 @@ document.getElementById('docketForm').addEventListener('submit', (event) => {
 // Function to save docket data to IndexedDB
 function saveDocketToDB(docket) {
   // URL of your API endpoint
-const apiUrl = 'http://localhost:3000/events';
+const apiUrl = '/events';
 
 // Make a POST request to the server
 fetch(apiUrl, {
@@ -113,7 +113,7 @@ fetch(apiUrl, {
     // Handle errors here
   });
 }async function fetchDocketData() {
-  const apiUrl = 'http://localhost:3000/events';
+  const apiUrl = '/events';
 
   try {
     const response = await fetch(apiUrl);

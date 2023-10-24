@@ -6,10 +6,13 @@ const bodyParser = require('body-parser');
 
 // vickynode
 // a6mZLvz3j6uLtLq5
-mongoose.connect('mongodb+srv://vickynode:Z8GpKxvckNwVJDIp@nodep1.3cgtoyi.mongodb.net/docket', {
+require('dotenv').config();
+
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
 
 const app = express();
 app.use(express.json());
