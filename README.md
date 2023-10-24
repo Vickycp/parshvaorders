@@ -1,14 +1,15 @@
 # Project Name: Docket Management System
 
 ## Overview
-Docket Management System is a web application that allows users to manage events and dockets efficiently. Users can input event details such as name, start time, end time, hours worked, rate per hour, supplier, purchase order, and description. The application parses data from a CSV file, populates dropdown menus dynamically, and enables users to save events as dockets in a MongoDB database. It provides functionalities to view and manage dockets conveniently.
+Docket Management System is a web application that allows users to manage orders and dockets efficiently. Users can input order details such as name, start time, end time, hours worked, rate per hour, supplier, purchase order, and description. The application parses data from a CSV file, populates dropdown menus dynamically, and enables users to save order as dockets in a MongoDB database. It provides functionalities to view and manage dockets conveniently.
+
 
 ## Features
 - **CSV Data Parsing:** The application parses data from a CSV file using the Papa Parse library, ensuring seamless integration of external data.
   
 - **Dynamic Dropdowns:** Users can select suppliers and purchase orders dynamically. The dropdowns populate based on CSV data, enhancing user experience and data accuracy.
 
-- **Event Creation:** Users can input event details via a form, creating dockets that are saved to the MongoDB database.
+- **Order Creation:** Users can input Order details via a form, creating dockets that are saved to the MongoDB database.
 
 - **Database Integration:** Dockets are saved to the MongoDB database through a POST request, ensuring persistent data storage and retrieval.
 
@@ -21,6 +22,7 @@ Docket Management System is a web application that allows users to manage events
 - **Libraries:** Papa Parse (for CSV parsing)
 - **Middleware:** body-parser (for parsing request bodies), cors (for enabling Cross-Origin Resource Sharing)
 - **Dependency Management:** npm (Node Package Manager)
+- ** URL :** https://orderlist-4zb9.onrender.com/
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/Vickycp/parshvaorders.git`
@@ -33,7 +35,7 @@ Ensure MongoDB is running and accessible at the specified URI (configured in the
 1. Upload a CSV file using the application interface.
 2. Select a supplier from the dropdown menu. Purchase order options will populate dynamically based on the selected supplier.
 3. Fill out the event details form, including name, start time, end time, hours worked, rate per hour, and description.
-4. Save the event as a docket, which will be stored in the MongoDB database.
+4. Save the order as a docket, which will be stored in the MongoDB database.
 5. View existing dockets in the table format displayed on the application interface.
 
 ## Contributing
