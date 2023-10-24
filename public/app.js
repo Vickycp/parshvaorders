@@ -80,16 +80,15 @@ document.getElementById('docketForm').addEventListener('submit', (event) => {
       description: description
   };
   dockets.push(docket);
-  saveDocketToDB(docket); // Save the docket data to IndexedDB
-  
+  saveDocketToDB(docket); 
 });
 
-// Function to save docket data to IndexedDB
+// Function to save docket data to mongodb
 function saveDocketToDB(docket) {
   // URL of your API endpoint
 const apiUrl = '/events';
 
-// Make a POST request to the server
+
 fetch(apiUrl, {
   method: 'POST',
   headers: {
@@ -106,11 +105,11 @@ fetch(apiUrl, {
   .then(data => {
     console.log('Event saved successfully:', data);
     displayDockets();
-    // Handle the response data here
+  
   })
   .catch(error => {
     console.error('Error:', error);
-    // Handle errors here
+   
   });
 }async function fetchDocketData() {
   const apiUrl = '/events';
@@ -124,8 +123,8 @@ fetch(apiUrl, {
     throw new Error('Network response was not ok.');
   } catch (error) {
     console.error('Error:', error);
-    // Handle errors here
-    throw error; // Rethrow the error for the caller to handle if necessary
+   
+    throw error;
   }
 }
 
@@ -158,12 +157,9 @@ async function displayDockets() {
     docketList.appendChild(docketTable);
   } catch (error) {
     console.error('Error displaying dockets:', error);
-    // Handle errors here (e.g., show an error message in the UI)
+    
   }
 }
 
-// Call the displayDockets function to initiate the process
 displayDockets();
 
-
-displayDockets()
